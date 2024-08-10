@@ -10,4 +10,7 @@
     <string name="valider_le_formulaire">Valider le formulaire</string>
     <string name="little_star">little star</string>
     <string name="vers_la_liste">Vers la liste</string>
+    <string name="save">Save</string>
+    <string name="read">Read</string>
+    <string name="temp">Temp</string>
 </resources>

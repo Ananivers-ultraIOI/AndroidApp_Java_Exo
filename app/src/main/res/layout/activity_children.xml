@@ -7,6 +7,13 @@
     tools:context=".ChildrenActivity"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/bleu_clair">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_children_list"
+        android:text="@string/vers_la_liste"
+        android:onClick="onChildrenClickManager"
+        tools:ignore="OnClick"/>
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -68,8 +75,15 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bt_children_list"
-        android:text="@string/vers_la_liste"
+        android:id="@+id/bt_children_save"
+        android:text="@string/save"
+        android:onClick="onChildrenClickManager"
+        tools:ignore="OnClick"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_children_read"
+        android:text="@string/read"
         android:onClick="onChildrenClickManager"
         tools:ignore="OnClick"/>
 </LinearLayout>

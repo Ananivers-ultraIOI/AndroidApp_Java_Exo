@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 public class ChildrenActivity extends Activity {
     EditText et_children_login;
     EditText et_children_pwd;
@@ -39,6 +43,29 @@ public class ChildrenActivity extends Activity {
         }
         if (v.getId()==R.id.bt_children_list){
             Intent intentList=new Intent(this,ListActivity.class);
+            startActivity(intentList);
+        }
+        if (v.getId()==R.id.bt_children_save){
+            if (et_children_login.getText().toString().isEmpty()||et_children_pwd.getText().toString().isEmpty()||et_children_email.getText().toString().isEmpty()){
+                Toast.makeText(getApplicationContext(),"Complètez tous les champs !",Toast.LENGTH_SHORT).show();
+            }else{
+                String str = et_children_login.getText().toString() +"#"+ et_children_pwd.getText().toString()+"#"+et_children_email.getText().toString()+"#";
+                Toast.makeText(getApplicationContext(),str,Toast.LENGTH_LONG).show();
+                try{
+                    FileOutputStream ous = openFileOutput("monfichier.txt",MODE_APPEND);
+                    byte[] tab;
+                    tab= str.getBytes();
+                    ous.write(tab);
+                    ous.close();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        if (v.getId()==R.id.bt_children_read){
+            Intent intentList=new Intent(this,FileActivity.class);
             startActivity(intentList);
         }
     }
