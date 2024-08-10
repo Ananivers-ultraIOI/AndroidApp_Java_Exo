@@ -2,9 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blanc">#fff1fd</color>
     <color name="bleu_clair">#ff00b0f0</color>
-    <color name="rouge">#ffff0000</color>
-    <color name="vert">#ff006600</color>
-    <color name="bleu">#ff000099</color>
+    <color name="rouge">#ff0007</color>
+    <color name="vert">#ff00ff00</color>
+    <color name="bleu">#01c4ff</color>
     <color name="jaune">#ffffCC00</color>
+    <color name="gris">#a8a4b0</color>
+    <color name="orangeclair">#ffcf22</color>
 </resources>
