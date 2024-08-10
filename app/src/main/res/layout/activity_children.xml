@@ -31,7 +31,8 @@
         android:id="@+id/et_children_login"
         android:autofillHints="login"
         android:inputType="text"
-        tools:ignore="LabelFor" />
+        tools:ignore="LabelFor"
+        android:layout_marginBottom="20dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,6 +62,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/bt_children_main"
         android:text="@string/valider_le_formulaire"
+        android:onClick="onChildrenClickManager"
+        android:layout_marginBottom="20dp"
+        tools:ignore="OnClick"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_children_list"
+        android:text="@string/vers_la_liste"
         android:onClick="onChildrenClickManager"
         tools:ignore="OnClick"/>
 </LinearLayout>
