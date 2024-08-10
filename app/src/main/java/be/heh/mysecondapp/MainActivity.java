@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
         Notification.Builder notification = new Notification.Builder(this)
                 .setAutoCancel(true)
                 .setContentTitle("Notification !!!")
-                .setContentText("L'activité Children est disponible ! \n ID :")
+                .setContentText("L'activité Children est disponible ! \n Batterie à "+ batLevel +" %")
                 .setContentIntent(pi)
                 .setDefaults(Notification.DEFAULT_ALL)
                 .setSmallIcon(R.drawable.ic_launcher_background)
