@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My second app</string>
+    <string name="hello_bugdroid">Hello Bugdroid</string>
+    <string name="enfant"><![CDATA[==> Enfant]]></string>
+    <string name="parent"><![CDATA[==> Parent]]></string>
+    <string name="inscription">INSCRIPTION :</string>
+    <string name="login">Login :</string>
+    <string name="password">Password :</string>
+    <string name="email">Email :</string>
+    <string name="valider_le_formulaire">Valider le formulaire</string>
+    <string name="little_star">little star</string>
+</resources>
